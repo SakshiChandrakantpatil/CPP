@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Base class Person
 class Person {
 protected:
     string name;
@@ -16,8 +15,6 @@ public:
         cout << "Age: " << age << endl;
     }
 };
-
-// Derived class Student
 class Student : public Person {
 private:
     int studentID;
@@ -29,8 +26,6 @@ public:
         cout << "Student ID: " << studentID << endl;
     }
 };
-
-// Derived class Employee
 class Employee : public Person {
 private:
     int employeeID;
@@ -46,12 +41,9 @@ public:
 };
 
 int main() {
-    // Creating objects of each class
-    Person person("John Doe", 30);
-    Student student("Alice Smith", 20, 12345);
-    Employee employee("Bob Johnson", 35, 1001, 50000.0);
-
-    // Displaying information
+    Person person("Sakshi", 30);
+    Student student("Panu", 20, 12345);
+    Employee employee("Smita", 35, 1001, 50000.0);
     cout << "Person:" << endl;
     person.display();
     cout << endl;
